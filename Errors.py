@@ -282,5 +282,5 @@ def starttimegraph(simulation_folder, save_plot = "True"):
             plt.close()
         
         
-frequencygraph("C:\\Users\\PSYLAB03\\Desktop\\Manya\\1-10_Simulations\\Simulation 1a", save_plot =False)
-#starttimegraph("C:\\Users\\PSYLAB03\\Desktop\\Manya\\1-10_Simulations\\Simulation 1a")
+frequencygraph("", save_plot =False)
+starttimegraph("")
