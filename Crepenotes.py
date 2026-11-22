@@ -98,7 +98,7 @@ def FullFunction(simulation_folder):
 '''tracker = 0
 for i in range(1,11):
     for j in ["a","b","c","d","e"]:
-        wav_folder = f"C:\\Users\\PSYLAB03\\Desktop\\Manya\\1-10_Simulations\\Simulation {i}{j}"
+        wav_folder = f"\\Simulation {i}{j}"
         FullFunction(wav_folder)
         tracker = tracker + 1
         print("Completed analysis for", tracker, "simulation/s")'''
