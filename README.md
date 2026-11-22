@@ -98,8 +98,6 @@ Basic Pitch achieved the lowest onset mean absolute error, at approximately **0.
 
 The negative signed offset bias indicates that Basic Pitch tended to predict note endings earlier than their ground-truth endpoints.
 
-This distinction is important: a system can identify the correct pitches and note beginnings while still producing inaccurate note durations and gaps between notes.
-
 ### 3. Differences Across Systems
 
 The benchmark did not identify one system as uniformly superior across all evaluation metrics.
@@ -110,15 +108,6 @@ The benchmark did not identify one system as uniformly superior across all evalu
 
 These findings highlight the importance of evaluating temporal accuracy alongside note-detection performance when comparing AMT systems.
 
-### 4. Inter-Note Interval and Offset Error
-
-The initial simulations revealed a relationship between the interval following a note and the error in its predicted endpoint. Shorter gaps were generally associated with larger early-offset errors in Basic Pitch.
-
-A separate controlled experiment was designed using **26 simulations**, with inter-note intervals ranging from 0.001 to 0.2 seconds.
-
-The analysis showed a strong negative correlation between inter-note interval and end-time RMSE (**Pearson's r = −0.85**). A simple linear model explained approximately **73% of the variation** in offset RMSE.
-
-These results establish a strong relationship between note spacing and the observed offset errors in the tested simulations. They motivate further investigation into the acoustic information that influences note-boundary predictions.
 
 ## Ongoing Work
 
